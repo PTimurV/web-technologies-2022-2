@@ -27,8 +27,7 @@ export class Auth {
         } else {
             this.setUserInfo({}, true)
         }
-
-
+        
         return data
     }
 
@@ -97,5 +96,9 @@ export class Auth {
         email.innerText = clear ? '' : user.email
         name.innerText = clear ? '' : user.name
         age.innerText = clear ? '' : user.age
+    }
+
+    async logout() {
+        localStorage.clear()
     }
 }

@@ -1,5 +1,6 @@
 import Form from "./components/form.js";
 import {Auth} from "./services/auth.js";
+import {Todos} from "./services/todos.js";
 
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init)
@@ -8,6 +9,10 @@ if (document.readyState === 'loading') {
 }
 
 function init() {
+    new Todos().addTodo({
+        "description": "description41111234"
+    })
+    
     new Form(
         document.getElementById('auth'),
         {

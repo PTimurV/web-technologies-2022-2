@@ -20,6 +20,7 @@
 
 <main class="main">
     <div class="user-info" data-user-info>
+        <label>Текущий пользователь</label>
         <div data-user-email>
         </div>
 
@@ -30,8 +31,24 @@
         </div>
     </div>
 
-    <div>
+    <div class="todos" id="todo-list">
+        <div class="addTodo-form">
+            <form id="addTodo" class="form">
+                <label class="text-field" data-input>
+                    <input class="text-field__input" type="text" name="description"
+                           placeholder="введите дело" autocomplete="off">
+                    <span class="text-field__error"></span>
+                </label>
 
+                <button id="add-todo" class="button" type="submit">
+                    Создать
+                </button>
+            </form>
+        </div>
+
+        <div class="user-todos" data-user-todos>
+
+        </div>
     </div>
 </main>
 

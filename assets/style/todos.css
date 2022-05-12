@@ -1,0 +1,23 @@
+.user-todos {
+
+}
+
+.user-todo {
+    padding: 10px;
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: 3% 80% 17%;
+    width: 400px;
+    border: 1px black;
+}
+.user-todoss {
+    margin-left: 8px;
+}
+.user-but {
+    width:65px;
+}
+
+
+.completed {
+    background-color: green;
+}
