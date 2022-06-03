@@ -1,5 +1,5 @@
-.list-item {
-    font-size: 16px;
+.list-items {
+    font-size: 1rem;
 }
 
 .list-item_open > .list-item__items {
@@ -8,25 +8,25 @@
 
 .list-item_open > .list-item__inner .list-item__arrow {
     transform: rotate(180deg);
-}   
+}
 
 .list-item__inner {
     display: flex;
     align-items: center;
-    gap: .5em;
+    gap: 1em;
 }
 
 .list-item__items {
-    padding-left: 1.5em;
+    padding-left: 4em;
     display: none;
 }
 
 .list-item__arrow {
-    width: 1em;
-    height: 1em;
+    width: 1.5em;
+    height: 1.5em;
     cursor: pointer;
 }
 
 .list-item__folder {
-    width: 2em;
+    width: 1.5em;
 }
